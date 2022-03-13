@@ -1,4 +1,6 @@
 import Header from "../components/Header";
+import CTA from "../components/CTA";
+
 import { styled } from "../styles/stitches.config";
 
 const Layout = styled("div", {
@@ -10,6 +12,7 @@ export default function Home() {
   return (
     <Layout>
       <Header />
+      <CTA />
     </Layout>
   );
   // Navigation
