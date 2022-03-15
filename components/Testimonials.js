@@ -27,8 +27,9 @@ export default function Testimonials() {
       <Heading>Testimonials</Heading>
       <Tweets>
         {testimonials &&
-          testimonials.map((testimonial) => (
+          testimonials.map((testimonial, index) => (
             <TwitterTweetEmbed
+              key={index}
               tweetId={testimonial}
               options={{ height: "100px", width: "400px" }}
             />
