@@ -1,6 +1,7 @@
 import React from "react";
 import { styled } from "../styles/stitches.config";
-
+import { EnterIcon } from "@radix-ui/react-icons";
+import { SubHeading } from "../styles/heading";
 const Box = styled("div", {
   color: "$white",
   padding: "20px",
@@ -13,13 +14,6 @@ const Heading = styled("h1", {
   fontSize: "35px",
 });
 
-const SubHeading = styled("p", {
-  color: "$white",
-  maxWidth: "70vw",
-  marginTop: "0",
-  marginBottom: "20px",
-});
-
 const CallButton = styled("button", {
   color: "$white",
   background: "$gold",
@@ -29,20 +23,22 @@ const CallButton = styled("button", {
   boxShadow: "2px 2px 5px red",
   fontWeight: "800",
   fontSize: "16px",
-  maxWidth: "115px",
+  maxWidth: "8.5rem",
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
 });
 
 function CTA() {
   return (
     <Box>
       <Heading>Automate limited liability and compliance with code.</Heading>
-      <SubHeading>
-        sdsdsdsdsdsdsds sdsdsdsdsdsdsds sdsdsdsdsdsdsds sdsdsdsdsdsdsds
-        sdsdsdsdsdsdsds sdsdsdsdsdsdsds sdsdsdsdsdsdsds sdsdsdsdsdsdsds
-        sdsdsdsdsdsdsds sdsdsdsdsdsdsds
+      <SubHeading css={{ color: "$gray" }}>
+        Build an internet-native organisation with KALI. Invest, build and
+        collaborate with anyone, anywhere.
       </SubHeading>
       <CallButton as="a" href="https://app.kalidao.xyz/" target="_blank">
-        Launch App
+        Launch App <EnterIcon />
       </CallButton>
     </Box>
   );

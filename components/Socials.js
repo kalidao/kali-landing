@@ -18,10 +18,9 @@ export default function SocialsFooter() {
   return (
     <Socials>
       <SocialLink href="https://twitter.com/_KaliDAO" target="_blank">
-        <TwitterLogoIcon as="a" css={{ color: "$white" }} />
+        <TwitterLogoIcon />
       </SocialLink>
-      {/* TODO: Add Discord Link */}
-      <SocialLink href="" target="_blank">
+      <SocialLink href="https://discord.com/invite/UKCS9ghzUE" target="_blank">
         <DiscordLogoIcon />
       </SocialLink>
       <SocialLink href="https://github.com/kalidao/" target="_blank">

@@ -1,7 +1,10 @@
+import { styled } from "../styles/stitches.config";
 import Header from "../components/Header";
 import CTA from "../components/CTA";
-import { styled } from "../styles/stitches.config";
-import Testimonials from "../components/Testimonials";
+import Features from "../components/Features";
+import Community from "../components/Community";
+import Partners from "../components/Partners";
+import Footer from "../components/Footer";
 
 const Layout = styled("div", {
   minHeight: "100vh",
@@ -13,13 +16,10 @@ export default function Home() {
     <Layout>
       <Header />
       <CTA />
-      <Testimonials />
+      <Features />
+      <Community />
+      <Partners />
+      <Footer />
     </Layout>
   );
-  // Navigation
-  // CTA
-  // Features
-  // Testimonials
-  // Partners
-  // Footer
 }

@@ -14,11 +14,12 @@ import React from "react";
 import { CaretDownIcon } from "@radix-ui/react-icons";
 
 const StyledMenu = styled(NavigationMenuPrimitive.Root, {
-  position: "relative",
+  position: "fixed",
   display: "flex",
   justifyContent: "flex-end",
   width: "100vw",
   zIndex: 1,
+  top: 0,
 });
 
 export const StyledList = styled(NavigationMenuPrimitive.List, {
@@ -76,6 +77,15 @@ export const StyledTriggerWithCaret = React.forwardRef(
 export const StyledLink = styled(NavigationMenuPrimitive.Link, {
   ...itemStyles,
   display: "block",
+  textDecoration: "none",
+  lineHeight: 1,
+});
+export const StyledLinkIcon = styled(NavigationMenuPrimitive.Link, {
+  ...itemStyles,
+  display: "flex",
+  justifyContent: "space-between",
+  paddingRight: "1rem",
+  width: "8.5rem",
   textDecoration: "none",
   lineHeight: 1,
 });
@@ -156,6 +166,7 @@ export const NavMenuList = StyledList;
 export const NavMenuItem = NavigationMenuPrimitive.Item;
 export const NavMenuTrigger = StyledTriggerWithCaret;
 export const NavMenuLink = StyledLink;
+export const NavMenuLinkIcon = StyledLinkIcon;
 export const NavMenuContent = StyledContent;
 export const NavMenuViewport = StyledViewport;
 export const NavMenuIndicator = StyledIndicatorArrow;
@@ -208,6 +219,34 @@ export const ContentListItem = React.forwardRef(
         }}
       >
         <LinkTitle>{title}</LinkTitle>
+        <LinkText>{children}</LinkText>
+      </NavMenuLink>
+    </ListItem>
+  )
+);
+
+export const ContentListItemIcon = React.forwardRef(
+  ({ children, title, icon, ...props }, forwardedRef) => (
+    <ListItem>
+      <NavMenuLink
+        {...props}
+        ref={forwardedRef}
+        css={{
+          padding: 12,
+          borderRadius: 6,
+          "&:hover": { backgroundColor: "$red" },
+        }}
+      >
+        <LinkTitle
+          css={{
+            display: "flex",
+            alignItems: "center",
+            gap: "5px",
+          }}
+        >
+          {icon}
+          {title}
+        </LinkTitle>
         <LinkText>{children}</LinkText>
       </NavMenuLink>
     </ListItem>
