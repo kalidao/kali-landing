@@ -11,7 +11,7 @@ export const { styled } = createStitches({
       purple: "rgba(65, 0, 118, 0.95)",
       yellow: "rgba(255, 215, 0, 0.95)",
       gold: "rgba(232, 186, 0, 1)",
-      blackAlpha: "rgba(19, 19, 21, 0.95)",
+      blackAlpha: "rgba(19, 19, 21, 0.98)",
     },
   },
 });
