@@ -46,7 +46,7 @@ export default function Community() {
       <Tweets>
         {tweets &&
           tweets.map((tweet) => (
-            <Tweet>
+            <Tweet key={tweet.from}>
               <TwitterTweetEmbed key={tweet.from} tweetId={tweet.tweetId} />
             </Tweet>
           ))}

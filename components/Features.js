@@ -20,7 +20,7 @@ const Cards = styled("div", {
 const Card = styled("div", {
   backgroundImage:
     "linear-gradient(352deg, #ff0000 0%, rgba(242, 4, 5, 0.83) 16.67%, rgba(229, 7, 8, 0.67) 33.33%, rgba(217, 10, 11, 0.5) 50%, rgba(204, 12, 12, 0.33) 66.67%, rgba(180, 13, 14, 0) 100%)",
-  filter: blur(2),
+  filter: "blur(0.4px)",
   padding: "1rem",
   borderRadius: "2rem",
   maxHeight: "25vh",
@@ -52,8 +52,9 @@ function Features() {
       {/* <Heading>Features</Heading> */}
       <Cards>
         {features &&
-          features.map((feature) => (
+          features.map((feature, index) => (
             <FeatureCard
+              key={index}
               title={feature.title}
               image={feature.image}
               description={feature.description}

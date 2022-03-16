@@ -24,7 +24,7 @@ function Partners() {
       <PartnerStream>
         {partners &&
           partners.map((partner, index) => (
-            <img src={partner.icon} alt={partner.name} />
+            <img key={index} src={partner.icon} alt={partner.name} />
             // <Image
             //   key={index}
             //   src={partner.icon}
