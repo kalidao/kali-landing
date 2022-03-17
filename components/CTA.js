@@ -32,7 +32,7 @@ const CallButton = styled("button", {
 function CTA() {
   return (
     <Box>
-      <Heading>DAO setup and incorporation made easy.</Heading>
+      <Heading>DAO setup and incorporation made easy</Heading>
       <SubHeading css={{ color: "$gray" }}>
         KALI launches complete internet-native orgs. Invest, build and
         collaborate with anyone, anywhere.
