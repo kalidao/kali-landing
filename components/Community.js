@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { tweets } from "../constants/tweets";
 import { styled } from "../styles/stitches.config";
 import { TwitterTweetEmbed } from "react-twitter-embed";
-import { Heading, SubHeading } from "../styles/heading";
+import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 
 const Box = styled("div", {
   padding: "0 20px",
@@ -18,6 +18,20 @@ const Tweets = styled("div", {
   overflow: "hidden",
 });
 
+const Button = styled("button", {
+  color: "$white",
+  border: "none",
+  background: "none",
+  borderRadius: "3rem",
+  "&:hover": {
+    background: "$red",
+  },
+});
+
+const IconButton = ({ icon, onClick }) => {
+  return <Button onClick={onClick}>{icon}</Button>;
+};
+
 const Tweet = styled("div", {});
 
 export default function Community() {
@@ -31,25 +45,23 @@ export default function Community() {
   const handleNext = () => {
     if (index === tweets.length - 1) {
       setIndex(0);
-      setXPos(0);
     } else {
       setIndex(index + 1);
-      setXPos(xPos - width);
     }
   };
 
   return (
     <Box>
-      {/* <Heading>Community</Heading> */}
-      {/* <SubHeading css={{ color: "$gray" }}>We love you too!</SubHeading> */}
       {/* TODO: ADD RESPONSIVE SLIDER */}
       <Tweets>
+        <IconButton icon={<ChevronLeftIcon />} onClick={handlePrev} />
         {tweets &&
           tweets.map((tweet) => (
             <Tweet key={tweet.from}>
               <TwitterTweetEmbed key={tweet.from} tweetId={tweet.tweetId} />
             </Tweet>
           ))}
+        <IconButton icon={<ChevronRightIcon />} onClick={handleNext} />
       </Tweets>
     </Box>
   );
