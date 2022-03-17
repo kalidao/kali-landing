@@ -32,9 +32,9 @@ const CallButton = styled("button", {
 function CTA() {
   return (
     <Box>
-      <Heading>Automate limited liability and compliance with code.</Heading>
+      <Heading>DAO setup and incorporation made easy.</Heading>
       <SubHeading css={{ color: "$gray" }}>
-        Build an internet-native organisation with KALI. Invest, build and
+        KALI launches complete internet-native orgs. Invest, build and
         collaborate with anyone, anywhere.
       </SubHeading>
       <CallButton as="a" href="https://app.kalidao.xyz/" target="_blank">
