@@ -6,11 +6,6 @@ export const Heading = styled('div', {
     lineHeight: "1.2em",
     zIndex: "999",
     color: "#000",
-
-    // position: "absolute",
-    // left: "20vw",
-    // top: "6vh"
-
 })
 
 export const SubHeading = styled('div', {
@@ -20,7 +15,6 @@ export const SubHeading = styled('div', {
 })
 
 export const Landing = styled('div', {
-    // top right bottom left
     margin: "10px 0px 0px 100px",
     display: "flex",
     flexDirection: "column",

@@ -9,6 +9,7 @@ import background from "../public/img/kali-bg.png";
 const Layout = styled("div", {
   minHeight: "100vh",
   background: "#fff",
+  position: "relative"
 });
 
 export default function Home() {
@@ -22,8 +23,8 @@ export default function Home() {
       <Header />
       <Sidebar />
       <MainLanding />
+      {/* <Image src={background.src} layout="fill" priority /> */}
     </Layout>
-    <Image src={background.src} layout="fill"  />
     </>
   );
 }

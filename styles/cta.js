@@ -29,7 +29,11 @@ export const ArrowUpIcon = () => {
 }
 
 export const CtaButton = () => {
-    return <Button as="a" href="https://app.kalidao.xyz/" target="_blank" rel="nooppener noreferrer"> 
+    const clickHandler = () => {
+        window.open("https://app.kalidao.xyz/", "_blank")
+    }
+    
+    return <Button onClick={clickHandler}> 
         Launch App
         <ArrowUpIcon />
     </Button>;
