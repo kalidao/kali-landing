@@ -1,5 +1,7 @@
 import { Landing, Heading, SubHeading } from "../styles/main"
 import { CtaButton } from "../styles/cta";
+import Features from "./Features";
+import Partners from "./Partners";
 
 export default function MainLanding() {
   return (
@@ -13,6 +15,8 @@ export default function MainLanding() {
         <div style={{maxWidth: "9.15rem"}}>
             <CtaButton />
         </div>
+        <Features />
+        <Partners />
       </Landing>
   )
 }

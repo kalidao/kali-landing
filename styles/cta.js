@@ -11,6 +11,7 @@ export const Button = styled('button', {
     alignItems: "center",
     padding: "6px 14px",
     gap: "7px",
+    zIndex: "100",
 
     // text
     fontStyle: "normal",

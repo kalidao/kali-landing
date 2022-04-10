@@ -14,7 +14,8 @@ const Layout = styled("div", {
 });
 
 const ImageBox = styled('div', {
-  pointerEvents: "none"
+  pointerEvents: "none",
+  zIndex: "-100"
 });
 
 export default function Home() {
@@ -29,7 +30,6 @@ export default function Home() {
       <Header />
       <Sidebar />
       <MainLanding />
-      {/* <Features /> */}
       <ImageBox>
         <Image src={background.src} layout="fill" priority/>
       </ImageBox>

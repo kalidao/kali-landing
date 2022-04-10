@@ -1,7 +1,7 @@
 export const partners = [
   {
     name: "SeedClub Ventures",
-    icon: "../public/partners/seedclub-logo.svg",
+    icon: "/../public/partners/seedclub-logo.svg",
   },
   {
     name: "Hashed",
@@ -13,11 +13,11 @@ export const partners = [
   // },
   {
     name: "LexDAO",
-    icon: "../public/partners/lexdao.png",
+    icon: "/../public/partners/lexdao.png",
   },
   {
     name: "LexPunk Army",
-    icon: "../public/partners/lexpunk.png",
+    icon: "/../public/partners/lexpunk.png",
   },
   // {
   //   name: "Twali",
