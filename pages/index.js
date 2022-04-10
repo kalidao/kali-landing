@@ -13,6 +13,10 @@ const Layout = styled("div", {
   position: "relative"
 });
 
+const ImageBox = styled('div', {
+  pointerEvents: "none"
+});
+
 export default function Home() {
   return (
     <>
@@ -26,7 +30,9 @@ export default function Home() {
       <Sidebar />
       <MainLanding />
       {/* <Features /> */}
-      {/* <Image src={background.src} layout="fill" priority /> */}
+      <ImageBox>
+        <Image src={background.src} layout="fill" priority/>
+      </ImageBox>
     </Layout>
     </>
   );
