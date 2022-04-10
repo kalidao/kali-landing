@@ -15,8 +15,8 @@ export default function MainLanding() {
         <div style={{maxWidth: "9.15rem"}}>
             <CtaButton />
         </div>
-        <Features />
-        <Partners />
+        {/* <Features />
+        <Partners /> */}
       </Landing>
   )
 }
