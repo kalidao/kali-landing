@@ -5,11 +5,12 @@ import Image from "next/image";
 import { features } from "../constants/features";
 
 const Box = styled("div", {
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  paddingBottom: "20px",
+  display: "grid",
+  margin: "4rem 0rem 0rem 0rem",
+  zIndex: "10"
+  //flexDirection: "column",
+  //justifyContent: "center",
+  //alignItems: "center",
 });
 
 const Cards = styled("div", {
@@ -18,15 +19,9 @@ const Cards = styled("div", {
 });
 
 const Card = styled("div", {
-  backgroundImage:
-    "linear-gradient(352deg, #ff0000 0%, rgba(242, 4, 5, 0.83) 16.67%, rgba(229, 7, 8, 0.67) 33.33%, rgba(217, 10, 11, 0.5) 50%, rgba(204, 12, 12, 0.33) 66.67%, rgba(180, 13, 14, 0) 100%)",
-  filter: "blur(0.4px)",
-  padding: "1rem",
-  borderRadius: "2rem",
   maxHeight: "25vh",
   minWidth: "10rem",
-  boxShadow: "2px 2px 2px rgb(0, 100, 26)",
-  color: "$white",
+  color: "$black",
 });
 
 const Title = styled("div", {
@@ -34,6 +29,7 @@ const Title = styled("div", {
   fontSize: "16px",
   paddingBottom: "1rem",
 });
+
 const Description = styled("div", {});
 
 const FeatureCard = ({ title, image, description }) => {
