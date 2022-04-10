@@ -15,7 +15,10 @@ export const SubHeading = styled('div', {
 })
 
 export const Landing = styled('div', {
-    margin: "10px 0px 0px 100px",
+    position: "absolute",
+    top: "10vh",
+    paddingLeft: "7rem",
+    //margin: "10px 0px 0px 100px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",

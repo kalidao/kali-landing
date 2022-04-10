@@ -1,9 +1,12 @@
 import { styled } from "./stitches.config";
 
 export const NavBox = styled('div', {
+    position: "absolute",
+    right: "0px",
+    width: "100%",
+    paddingLeft: "7rem",
     display: "flex",
     justifyContent: "space-between",
-    width: "80vw",
 });
 
 export const NavRight = styled('div', {

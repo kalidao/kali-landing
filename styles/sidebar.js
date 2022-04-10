@@ -2,10 +2,11 @@ import { styled } from "./stitches.config";
 
 export const Sidebar = styled('div', {
     position: "absolute",
-    width: "76px",
-    minHeight: "100vh",
+    width: "5rem",
+    height: "auto",
     left: "0px",
     top: "0px",
+    bottom: "0px",
     borderRight: "1px solid #dddddd",
     display: "flex",
 })
