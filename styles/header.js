@@ -3,9 +3,7 @@ import { styled } from "./stitches.config";
 export const Header = styled("div", {
   position: "absolute",
   top: "0px",
-  right: "0px",
-  left: "0px",
-  width: "auto",
+  width: "100%",
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",

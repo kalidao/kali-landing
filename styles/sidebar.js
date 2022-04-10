@@ -3,12 +3,12 @@ import { styled } from "./stitches.config";
 export const Sidebar = styled('div', {
     position: "absolute",
     width: "5rem",
-    height: "auto",
-    left: "0px",
-    top: "0px",
+    height: "100%",
     bottom: "0px",
     borderRight: "1px solid #dddddd",
     display: "flex",
+    justifyContent: "center",
+    alignItems: "flex-end"
 })
 
 export const SidebarSocial = styled('div', {
@@ -17,7 +17,7 @@ export const SidebarSocial = styled('div', {
     alignItems: "center",
     justifyContent: "end",
     gap: "10px",
-    margin: "3vh 3vh",
+    marginBottom: "2rem",
 })
 
 export const SocialLink = ({icon, link}) => {
