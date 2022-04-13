@@ -12,6 +12,7 @@ export const Button = styled('button', {
     padding: "6px 14px",
     gap: "7px",
     zIndex: "100",
+    pointerEvents: "auto",
 
     // text
     fontStyle: "normal",
@@ -22,6 +23,8 @@ export const Button = styled('button', {
     '&:hover': {
         backgroundColor: "$green"
     }
+
+    
 })
 
 
