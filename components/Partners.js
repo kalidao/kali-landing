@@ -13,8 +13,9 @@ const PartnerStream = styled("div", {
   justifyContent: "center",
   alignItems: "center",
   gap: "1rem",
-  zIndex: "1",
+  zIndex: "0",
   marginTop: "3rem",
+  pointerEvents: "none",
 });
  
 function Partners() {

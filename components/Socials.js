@@ -9,6 +9,7 @@ import { styled } from "../styles/stitches.config";
 const Socials = styled("div", {
   display: "flex",
   gap: "1rem",
+  zIndex: "2",
 });
 const SocialLink = styled("a", {
   color: "$gray",

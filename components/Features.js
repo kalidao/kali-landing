@@ -6,8 +6,9 @@ import { features } from "../constants/features";
 
 const Box = styled("div", {
   display: "grid",
-  margin: "4rem 0rem 0rem 0rem",
-  zIndex: "10"
+  margin: "0rem 0rem 0rem 0rem",
+  zIndex: "10",
+  pointerEvents: "none"
   //flexDirection: "column",
   //justifyContent: "center",
   //alignItems: "center",
