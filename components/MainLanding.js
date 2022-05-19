@@ -16,7 +16,6 @@ export default function MainLanding() {
         </SubHeading>
         <div style={{maxWidth: "25rem", display: "flex", gap: "1rem"}}>
             <CtaButton />
-            <ConsultButton />
         </div>
         <Features />
         <Partners /> 
