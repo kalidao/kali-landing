@@ -31,12 +31,12 @@ export default function Home() {
         <meta property="og:title" content="KALI" key="title" />
         <meta name="viewport" content="width=800" />
       </Head>
-      <Blob />
       <Layout>
         <Nav />
         <Sidebar />
         <MainLanding />
       </Layout>
+      <Blob />
     </>
   )
 }

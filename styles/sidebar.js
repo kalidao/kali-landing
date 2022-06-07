@@ -23,6 +23,10 @@ export const SocialIcon = styled('a', {
   '& svg': {
     display: 'inline-block',
     filter: 'invert(97%) sepia(1%) saturate(2665%) hue-rotate(285deg) brightness(119%) contrast(80%)',
+
+    '&:hover': {
+      filter: 'invert(81%) sepia(0%) saturate(0%) hue-rotate(332deg) brightness(103%) contrast(91%)',
+    },
   },
 })
 

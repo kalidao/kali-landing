@@ -23,4 +23,5 @@ export const Landing = styled('div', {
   justifyContent: 'center',
   gap: '20px',
   pointerEvents: 'none',
+  width: '80%',
 })
