@@ -1,10 +1,10 @@
-import React from "react";
-import { styled } from "../styles/stitches.config";
+import React from 'react'
+import { styled } from '../styles/stitches.config'
 
-const Box = styled("div", {
-  color: "$gray",
-});
+const Box = styled('div', {
+  color: '$gray100',
+})
 
 export default function Disclaimer() {
-  return <Box>Developed by KaliCo</Box>;
+  return <Box>Developed by KaliCo</Box>
 }
