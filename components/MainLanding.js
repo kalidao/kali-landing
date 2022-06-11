@@ -8,7 +8,7 @@ export default function MainLanding() {
     <Landing>
       <Heading>DAO Setup & Incorporation Made Easy</Heading>
       <SubHeading>
-        KALI launches complete internet-native organizations. Invest, build and collaborate with anyone, anywhere.
+        KALI launches crypto-native organizations. Invest, build and collaborate with anyone, anywhere.
       </SubHeading>
       <div style={{ maxWidth: '25rem', display: 'flex', gap: '1rem' }}>
         <CtaButton />
