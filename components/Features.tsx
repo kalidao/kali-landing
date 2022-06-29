@@ -1,7 +1,5 @@
 import React from 'react'
-import { Heading } from '../styles/heading'
 import { styled } from '../styles/stitches.config'
-import Image from 'next/image'
 import { features } from '../constants/features'
 
 const Box = styled('div', {
@@ -9,9 +7,6 @@ const Box = styled('div', {
   margin: '0rem 0rem 0rem 0rem',
   zIndex: '10',
   pointerEvents: 'none',
-  //flexDirection: "column",
-  //justifyContent: "center",
-  //alignItems: "center",
 })
 
 const Cards = styled('div', {
