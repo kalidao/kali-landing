@@ -1,20 +1,25 @@
 import { Landing, Heading, SubHeading } from '../styles/main'
+import { Text } from '../styles/Text'
 import { CtaButton } from '../styles/cta'
-import Features from './Features'
-import Partners from './Partners'
 
 export default function MainLanding() {
   return (
-    <Landing>
-      <Heading>DAO Setup & Incorporation Made Easy</Heading>
-      <SubHeading>
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'flex-end',
+      alignItems: 'flex-start',
+      minHeight: '85vh',
+      paddingLeft: '40px',
+      gap: '20px'
+    }}>
+      <Text variant='heading'>New Net Stuctures</Text>
+      {/* <Text as='h2' variant='subheading'>
         KALI launches crypto-native organizations. Invest, build and collaborate with anyone, anywhere.
-      </SubHeading>
+      </Text> */}
       <div style={{ maxWidth: '25rem', display: 'flex', gap: '1rem' }}>
         <CtaButton />
       </div>
-      <Features />
-      <Partners />
-    </Landing>
+    </div>
   )
 }

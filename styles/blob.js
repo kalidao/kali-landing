@@ -1,17 +1,23 @@
 import { styled } from './stitches.config'
+import { stars } from './animation'
 
 const Blob = styled('div', {
   top: 0,
   right: 0,
-  bottom: 0,
+  bottom: -50,
   left: 0,
   position: 'absolute',
   zIndex: '-1',
-  background:
-    'radial-gradient(circle at top left, $purple500, rgba(255, 255, 255, 0) 25%), radial-gradient(circle at bottom right, $yellow400, rgba(255, 255, 255, 0) 15%)',
-  '@bp2': {
-    background:
-      'radial-gradient(circle at 15% 50%, $purple100, rgba(255, 255, 255, 0) 25%), radial-gradient(circle at 85% 30%, $yellow100, rgba(255, 255, 255, 0) 25%)',
+
+  '@media (prefers-reduced-motion: no-preference)': {
+    animation: `${stars} 0.5s linear 0ms infinite alternate`,
+    filter: 'contrast(170%) brightness(1000%)',
+    background: 'linear-gradient(317deg, rgba(0,0,0,0.66), rgba(0,0,0,0)), url(img/noise.svg)',
+  },
+
+  '&:hover': {
+    // filter: 'hue-rotate(90deg)',
+    backgroundBlendMode: 'saturation',
   },
 })
 
