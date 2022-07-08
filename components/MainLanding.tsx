@@ -22,7 +22,7 @@ export default function MainLanding() {
         '@media (max-width: 1168px)': {
           fontSize: '110px',
         },
-      }}>Net Structures</Text>
+      }}>Net Structuring</Text>
       <div style={{ maxWidth: '25rem', display: 'flex', gap: '1rem' }}>
         <CtaButton />
       </div>
