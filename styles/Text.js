@@ -8,6 +8,10 @@ export const Text = styled('div', {
       heading: {
         fontFamily: 'Bold',
         fontSize: '180px',
+
+        '@media (min-width: 768px)': {
+          fontSize: '120px',
+        },
       },
       subheading: {
         fontFamily: 'Regular',
