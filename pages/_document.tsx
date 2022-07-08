@@ -33,9 +33,7 @@ export default class Document extends NextDocument {
             }}
           />
         </Head>
-        <body style={{
-            background: 'hsl(0, 0%, 4.5%)',
-          }}>
+        <body>
           <Main />
           <NextScript />
         </body>
