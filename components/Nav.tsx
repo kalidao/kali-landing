@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavBox, NavLink } from '../styles/nav'
+import { NavLink } from '../styles/nav'
 import { CtaButton } from '../styles/cta'
 
 export default function Nav() {
