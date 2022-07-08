@@ -1,9 +1,9 @@
 import Head from 'next/head'
+import RicardianLanding from '../components/RicardianLanding';
 import Nav from '../components/Nav'
-import MainLanding from '../components/MainLanding'
 import Blob from '../styles/blob';
 
-export default function Home() {
+export default function Ricardian() {
   return (
     <>
       <Head>
@@ -17,7 +17,7 @@ export default function Home() {
       }}>
         <div>
         <Nav />
-        <MainLanding />
+        <RicardianLanding />
         </div>
         {/* <Features />
         <Partners />

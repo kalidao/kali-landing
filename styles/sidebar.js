@@ -1,22 +1,13 @@
 import { styled } from './stitches.config'
 
 export const Sidebar = styled('div', {
-  position: 'absolute',
-  width: '5rem',
-  height: '100%',
-  bottom: '0px',
+  bottom: '0',
   display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'flex-end',
-})
-
-export const SidebarSocial = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
+  gap: '15px',
+  flexDirection: 'row',
+  justifyContent: 'flex-end',
   alignItems: 'center',
-  justifyContent: 'end',
-  gap: '10px',
-  marginBottom: '2rem',
+  padding: '1rem',
 })
 
 export const SocialIcon = styled('a', {

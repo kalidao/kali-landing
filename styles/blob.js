@@ -1,4 +1,5 @@
 import { styled } from './stitches.config'
+// import { stars } from './animation'
 
 const Blob = styled('div', {
   top: 0,
@@ -7,11 +8,11 @@ const Blob = styled('div', {
   left: 0,
   position: 'absolute',
   zIndex: '-1',
-  background:
-    'radial-gradient(circle at top left, $purple500, rgba(255, 255, 255, 0) 25%), radial-gradient(circle at bottom right, $yellow400, rgba(255, 255, 255, 0) 15%)',
-  '@bp2': {
-    background:
-      'radial-gradient(circle at 15% 50%, $purple100, rgba(255, 255, 255, 0) 25%), radial-gradient(circle at 85% 30%, $yellow100, rgba(255, 255, 255, 0) 25%)',
+
+  '@media (prefers-reduced-motion: no-preference)': {
+    // animation: `${stars} 0.5s linear 0ms infinite alternate`,
+    filter: 'contrast(155%) brightness(160%)',
+    background: 'linear-gradient(85deg, rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url(img/noise.svg)',
   },
 })
 

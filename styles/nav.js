@@ -1,24 +1,16 @@
 import { styled } from './stitches.config'
-
-export const NavBox = styled('div', {
-  width: '100%',
-  height: '5rem',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'flex-end',
-  gap: '10px',
-})
+import { mauve } from '@radix-ui/colors'
 
 export const NavLink = styled('a', {
-  color: '$foreground',
+  color: mauve.mauve7,
   fontStyle: 'normal',
-  fontWeight: '600',
-  fontSize: '16px',
+  fontWeight: '700',
+  fontSize: '24px',
   lineHeight: '19px',
 
   '&:hover': {
     textDecorationLine: 'underline',
     textDecorationStyle: 'solid',
-    textDecorationColor: '$green100',
+    textDecorationColor: '$green1',
   },
 })

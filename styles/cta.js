@@ -1,27 +1,28 @@
 import { styled } from './stitches.config'
 
 export const Button = styled('button', {
-  backgroundColor: '$purple500',
+  backgroundColor: 'hsl(252, 42.2%, 26.2%)',
   color: '$foreground',
   boxShadow: '0px 0px 4px rgba(0, 0, 0, 0.25)',
-  borderRadius: '35px',
+  borderRadius: '30px',
   border: 'none',
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
-  padding: '6px 14px',
-  gap: '7px',
+  padding: '20px 26px',
+  gap: '5px',
   zIndex: '100',
   pointerEvents: 'auto',
 
   // text
   fontStyle: 'normal',
-  fontWeight: '700',
-  fontSize: '16px',
+  fontFamily: 'Regular',
+  fontWeight: '800',
+  fontSize: '36px',
   lineHeight: '19px',
 
   '&:hover': {
-    backgroundColor: '$purple600',
+    backgroundColor: 'hsl(251, 44.3%, 31.1%)',
   },
 })
 
