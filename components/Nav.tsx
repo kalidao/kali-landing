@@ -11,7 +11,6 @@ export default function Nav() {
       alignItems: 'center',
       justifyContent: 'flex-end',
       gap: '10px',
-      color: 'white'
     }}>
       <NavLink href="https://docs.kalidao.xyz/" target="_blank" rel="noreferrer noopener">
         Docs
