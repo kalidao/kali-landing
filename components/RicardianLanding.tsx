@@ -1,4 +1,3 @@
-import { Landing, Heading, SubHeading } from '../styles/main'
 import { Text } from '../styles/Text'
 import { CtaButton } from '../styles/cta'
 
@@ -13,7 +12,14 @@ export default function MainLanding() {
       paddingLeft: '40px',
       gap: '20px'
     }}>
-      <Text variant='heading'>Ricardian Contracts</Text>
+      <Text css={{
+        fontFamily: 'Bold',
+        fontSize: '180px',
+
+        '@media (min-width: 768px)': {
+          fontSize: '120px',
+        },
+      }}>Ricardian Contracts</Text>
       {/* <Text as='h2' variant='subheading'>
         KALI launches crypto-native organizations. Invest, build and collaborate with anyone, anywhere.
       </Text> */}

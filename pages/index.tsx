@@ -1,12 +1,7 @@
 import Head from 'next/head'
-import { styled } from '../styles/stitches.config'
-import Sidebar from '../components/Sidebar'
 import Nav from '../components/Nav'
 import MainLanding from '../components/MainLanding'
-import Layout from '../styles/layout'
 import Blob from '../styles/blob';
-import Features from '../components/Features'
-import Partners from '../components/Partners'
 
 export default function Home() {
   return (

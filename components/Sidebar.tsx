@@ -1,4 +1,4 @@
-import { Sidebar as SidebarLayout, SidebarSocial, SocialLink } from '../styles/sidebar'
+import { Sidebar as SidebarLayout, SocialLink } from '../styles/sidebar'
 import { DiscordIcon, GitHubIcon, MirrorIcon, TwitterIcon } from '../styles/socialIcons'
 
 export default function Sidebar() {

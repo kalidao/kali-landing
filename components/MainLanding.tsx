@@ -13,10 +13,14 @@ export default function MainLanding() {
       paddingLeft: '40px',
       gap: '20px'
     }}>
-      <Text variant='heading'>New Net Stuctures</Text>
-      {/* <Text as='h2' variant='subheading'>
-        KALI launches crypto-native organizations. Invest, build and collaborate with anyone, anywhere.
-      </Text> */}
+      <Text css={{
+        fontFamily: 'Bold',
+        fontSize: '180px',
+
+        '@media (min-width: 768px)': {
+          fontSize: '120px',
+        },
+      }}>New Net Stuctures</Text>
       <div style={{ maxWidth: '25rem', display: 'flex', gap: '1rem' }}>
         <CtaButton />
       </div>
