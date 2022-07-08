@@ -15,6 +15,11 @@ export default class Document extends NextDocument {
             type="font/woff2"
             crossOrigin="anonymous"
           />
+          <link
+            rel="preload"
+            href="img/noise.svg"
+            as="image"
+          />
           <style
             dangerouslySetInnerHTML={{
               __html: `
